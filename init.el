@@ -156,4 +156,4 @@
         (ielm))
     (switch-to-buffer-other-window "*ielm*")))
 
-(define-key emacs-lisp-mode-map (kbd "C-c C-z") 'visit-ielm)
+(global-set-key (kbd "C-c C-z") 'visit-ielm)
