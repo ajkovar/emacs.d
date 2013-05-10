@@ -158,3 +158,10 @@
     (switch-to-buffer-other-window "*ielm*")))
 
 (global-set-key (kbd "C-c C-z") 'visit-ielm)
+
+(require 'key-chord)
+(key-chord-define evil-insert-state-map "df" 'evil-normal-state)
+(key-chord-define evil-visual-state-map "df" 'evil-normal-state)
+(key-chord-define evil-emacs-state-map "df" 'evil-normal-state)
+(key-chord-define evil-motion-state-map "df" 'evil-normal-state)
+(key-chord-mode +1)
