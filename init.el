@@ -165,3 +165,5 @@
 (key-chord-define evil-emacs-state-map "df" 'evil-normal-state)
 (key-chord-define evil-motion-state-map "df" 'evil-normal-state)
 (key-chord-mode +1)
+
+(setq dabbrev-case-replace nil)
