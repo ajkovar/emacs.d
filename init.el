@@ -5,8 +5,6 @@
                   ("melpa" . "http://melpa.milkbox.net/packages/")))
   (add-to-list 'package-archives source t))
 
-;; (add-to-list 'package-archives
-;;              '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (setq package-user-dir (expand-file-name "elpa" (file-name-directory load-file-name)))
 (package-initialize)
 
@@ -37,9 +35,6 @@
     ;; install the missing packages
     (dolist (package (remove-if #'package-installed-p prelude-packages))
       (package-install package))))
-    ;; (-each
-    ;;  (-reject #'package-installed-p prelude-packages)
-    ;;  #'package-install)))
 
 (prelude-install-packages)
 
