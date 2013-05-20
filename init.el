@@ -66,7 +66,7 @@
     ("\\.slim\\'" slim-mode slim-mode)
     ("\\.yml\\'" yaml-mode yaml-mode)
     ("\\.json\\'" js2-mode js2-mode)
-    ("\\.js\\" js2-mode js2-mode)))
+    ("\\.js\\'" js2-mode js2-mode)))
 
 (mapc
  (lambda (entry)
