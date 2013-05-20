@@ -19,7 +19,7 @@
                   dash starter-kit starter-kit-bindings
                   starter-kit-js starter-kit-lisp
                   starter-kit-ruby
-                  evil)
+                  evil js2-refactor)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
@@ -64,7 +64,17 @@
     ("\\.scala\\'" scala-mode2 scala-mode)
     ("\\.scss\\'" scss-mode scss-mode)
     ("\\.slim\\'" slim-mode slim-mode)
-    ("\\.yml\\'" yaml-mode yaml-mode)))
+    ("\\.yml\\'" yaml-mode yaml-mode)
+    ("\\.json\\'" js2-mode js2-mode)
+    ("\\.js\\" js2-mode js2-mode)))
+
+(mapc
+ (lambda (entry)
+   (let ((extension (car entry))
+         (package (cadr entry))
+         (mode (cadr (cdr entry))))
+       (prelude-auto-install extension package mode)))
+ prelude-auto-install-alist)
 
 (require 'dash)
 
@@ -85,7 +95,7 @@
 (global-set-key (kbd "C-x f") 'recentf-ido-find-file)
 
 ;; use tabs/set tab width for certain modes
-(-each '(js-mode-hook html-mode-hook nxml-mode-hook css-mode-hook)
+(-each '(js2-mode-hook js-mode-hook html-mode-hook nxml-mode-hook css-mode-hook)
        (lambda (hook)
          (add-hook hook
                    (lambda ()
@@ -112,6 +122,7 @@
  '(js-expr-indent-offset 4)
  '(js-indent-level 4)
  '(js-paren-indent-offset 0)
+ '(js2-strict-missing-semi-warning nil)
  '(projectile-git-command "git ls-tree -z -r --name-only HEAD"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
