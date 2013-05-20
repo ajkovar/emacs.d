@@ -172,3 +172,8 @@
 (key-chord-mode +1)
 
 (setq dabbrev-case-replace nil)
+
+(eval-after-load "paredit"
+  '(progn
+    (define-key paredit-mode-map (kbd "M-(") 'paredit-wrap-round)))
+
