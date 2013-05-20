@@ -23,8 +23,7 @@
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
-  ;; (-all? #'package-installed-p prelude-packages))
-  nil)
+  (equalp 0 (length (remove-if #'package-installed-p prelude-packages))))
 
 (defun prelude-install-packages ()
   (unless (prelude-packages-installed-p)
