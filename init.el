@@ -184,3 +184,5 @@
 
 (require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
+
+(js2r-add-keybindings-with-prefix "C-c m")
