@@ -6,6 +6,8 @@
   (add-to-list 'package-archives source t))
 
 (setq package-user-dir (expand-file-name "elpa" (file-name-directory load-file-name)))
+(setq snippet-user-dir (expand-file-name "snippets" (file-name-directory load-file-name)))
+
 (package-initialize)
 
 (defvar prelude-packages
@@ -16,7 +18,7 @@
                   key-chord magit melpa
                   rainbow-mode solarized-theme undo-tree
                   volatile-highlights yasnippet zenburn-theme
-                  dash starter-kit starter-kit-bindings
+                  starter-kit starter-kit-bindings
                   starter-kit-js starter-kit-lisp
                   starter-kit-ruby evil js2-refactor
                   smart-mode-line)
@@ -142,7 +144,7 @@
 
 (require 'yasnippet)
 (yas--initialize)
-(yas/load-directory "/home/alex/.emacs.d/elpa/yasnippet-20130218.2229/snippets")
+(yas/load-directory snippet-user-dir)
 
 (global-set-key (kbd "C-x g") 'magit-status)
 
