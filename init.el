@@ -66,7 +66,11 @@
     ("\\.slim\\'" slim-mode slim-mode)
     ("\\.yml\\'" yaml-mode yaml-mode)
     ("\\.json\\'" js2-mode js2-mode)
-    ("\\.js\\'" js2-mode js2-mode)))
+    ("\\.js\\'" js2-mode js2-mode)
+    ("buildfile\\'" ruby-mode ruby-mode)
+    ("\\.xml\\'" nxml-mode nxml-mode)
+    ("\\.jsp\\'" nxml-mode nxml-mode)
+    ("\\.ejs\\'" nxml-mode nxml-mode)))
 
 (mapc
  (lambda (entry)
@@ -143,11 +147,6 @@
 (global-set-key (kbd "C-x g") 'magit-status)
 
 (projectile-global-mode)
-
-(add-to-list 'auto-mode-alist '("\\.xml$" . nxml-mode))
-(add-to-list 'auto-mode-alist '("buildfile$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.jsp$" . nxml-mode))
-(add-to-list 'auto-mode-alist '("\\.ejs$" . nxml-mode))
 
 (setq ido-use-filename-at-point nil)
 
