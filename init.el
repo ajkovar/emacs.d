@@ -18,8 +18,8 @@
                   volatile-highlights yasnippet zenburn-theme
                   dash starter-kit starter-kit-bindings
                   starter-kit-js starter-kit-lisp
-                  starter-kit-ruby
-                  evil js2-refactor)
+                  starter-kit-ruby evil js2-refactor
+                  smart-mode-line)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
@@ -176,4 +176,7 @@
 (eval-after-load "paredit"
   '(progn
     (define-key paredit-mode-map (kbd "M-(") 'paredit-wrap-round)))
+
+(require 'smart-mode-line)
+(add-hook 'after-init-hook 'sml/setup)
 
