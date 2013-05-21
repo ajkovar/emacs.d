@@ -89,7 +89,6 @@
 
 ;; use ido with recentf
 
-(require 'recentf)
 (recentf-mode 1)
 (setq recentf-max-saved-items 300)
 
@@ -166,7 +165,6 @@
 
 (global-set-key (kbd "C-c C-z") 'visit-ielm)
 
-(require 'key-chord)
 (key-chord-define evil-insert-state-map "df" 'evil-normal-state)
 (key-chord-define evil-visual-state-map "df" 'evil-normal-state)
 (key-chord-define evil-emacs-state-map "df" 'evil-normal-state)
@@ -179,10 +177,8 @@
   '(progn
     (define-key paredit-mode-map (kbd "M-(") 'paredit-wrap-round)))
 
-(require 'smart-mode-line)
 (add-hook 'after-init-hook 'sml/setup)
 
-(require 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 (js2r-add-keybindings-with-prefix "C-c m")
