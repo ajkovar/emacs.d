@@ -182,3 +182,5 @@
 (require 'smart-mode-line)
 (add-hook 'after-init-hook 'sml/setup)
 
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
