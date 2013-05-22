@@ -165,10 +165,11 @@
 
 (global-set-key (kbd "C-c C-z") 'visit-ielm)
 
-(key-chord-define evil-insert-state-map "df" 'evil-normal-state)
-(key-chord-define evil-visual-state-map "df" 'evil-normal-state)
-(key-chord-define evil-emacs-state-map "df" 'evil-normal-state)
-(key-chord-define evil-motion-state-map "df" 'evil-normal-state)
+(dolist (mode (list evil-insert-state-map
+                    evil-visual-state-map
+                    evil-emacs-state-map
+                    evil-motion-state-map))
+  (key-chord-define mode "df" 'evil-normal-state))
 (key-chord-mode +1)
 
 (setq dabbrev-case-replace nil)
