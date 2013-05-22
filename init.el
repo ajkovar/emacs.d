@@ -185,3 +185,6 @@
 (js2r-add-keybindings-with-prefix "C-c m")
 
 (define-key evil-normal-state-map (kbd "SPC") 'ace-jump-mode)
+
+(require 'volatile-highlights)
+(volatile-highlights-mode t)
