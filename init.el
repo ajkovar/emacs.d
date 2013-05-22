@@ -16,8 +16,8 @@
                   git-commit-mode gitconfig-mode gitignore-mode
                   guru-mode helm helm-projectile
                   key-chord magit melpa
-                  rainbow-mode solarized-theme undo-tree
-                  volatile-highlights yasnippet zenburn-theme
+                  rainbow-mode undo-tree
+                  volatile-highlights yasnippet
                   starter-kit starter-kit-bindings
                   starter-kit-js starter-kit-lisp
                   starter-kit-ruby evil js2-refactor
