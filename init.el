@@ -193,3 +193,5 @@
 ;;; enable rainbow mode for certain modes
 (-each '(html-mode-hook nxml-mode-hook css-mode-hook)
        (lambda (hook) (add-hook hook 'rainbow-mode)))
+
+(load-theme 'deeper-blue)
