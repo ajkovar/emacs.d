@@ -182,6 +182,8 @@
 
 (global-set-key (kbd "C-=") 'er/expand-region)
 
+(global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
+
 (js2r-add-keybindings-with-prefix "C-c m")
 
 (dolist (mode (list evil-normal-state-map evil-visual-state-map))
