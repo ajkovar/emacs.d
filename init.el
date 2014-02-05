@@ -196,4 +196,7 @@
 (-each '(html-mode-hook nxml-mode-hook css-mode-hook)
        (lambda (hook) (add-hook hook 'rainbow-mode)))
 
+(-each '(js2-mode-hook)
+       (lambda (hook) (add-hook hook 'autopair-mode)))
+
 (load-theme 'deeper-blue)
