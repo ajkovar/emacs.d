@@ -21,7 +21,7 @@
                   starter-kit starter-kit-bindings
                   starter-kit-js starter-kit-lisp
                   starter-kit-ruby evil js2-refactor
-                  smart-mode-line)
+                  smart-mode-line zencoding-mode)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
@@ -195,6 +195,8 @@
 ;;; enable rainbow mode for certain modes
 (-each '(html-mode-hook nxml-mode-hook css-mode-hook)
        (lambda (hook) (add-hook hook 'rainbow-mode)))
+
+(add-hook 'sgml-mode-hook 'zencoding-mode)
 
 (-each '(js2-mode-hook)
        (lambda (hook) (add-hook hook 'autopair-mode)))
