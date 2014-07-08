@@ -198,7 +198,7 @@
 
 (add-hook 'sgml-mode-hook 'emmet-mode)
 
-(-each '(js2-mode-hook)
+(-each '(js2-mode-hook less-mode-hook)
        (lambda (hook) (add-hook hook 'autopair-mode)))
 
 (load-theme 'deeper-blue)
