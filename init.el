@@ -202,3 +202,6 @@
        (lambda (hook) (add-hook hook 'autopair-mode)))
 
 (load-theme 'deeper-blue)
+
+(remove-hook 'text-mode-hook 'turn-on-auto-fill)
+(remove-hook 'prog-mode-hook 'esk-local-comment-auto-fill)
