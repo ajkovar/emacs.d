@@ -15,7 +15,7 @@
                   expand-region flycheck gist
                   git-commit-mode gitconfig-mode gitignore-mode
                   guru-mode helm helm-projectile
-                  key-chord magit melpa
+                  key-chord magit
                   rainbow-mode undo-tree
                   volatile-highlights yasnippet
                   starter-kit starter-kit-bindings
