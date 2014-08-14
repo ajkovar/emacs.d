@@ -128,7 +128,7 @@
  '(js-indent-level 4)
  '(js-paren-indent-offset 0)
  '(js2-strict-missing-semi-warning nil)
- '(js2-global-externs '("jQuery" "Backbone" "namespace" "_" "rosy"))
+ '(js2-global-externs '("jQuery" "Backbone" "namespace" "_" "angular"))
  '(projectile-git-command "git ls-tree -z -r --name-only HEAD"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
