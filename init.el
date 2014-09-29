@@ -205,3 +205,5 @@
 
 (remove-hook 'text-mode-hook 'turn-on-auto-fill)
 (remove-hook 'prog-mode-hook 'esk-local-comment-auto-fill)
+
+(setq scss-compile-at-save nil)
