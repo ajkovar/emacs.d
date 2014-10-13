@@ -50,6 +50,7 @@
   '(("\\.clj\\'" clojure-mode clojure-mode)
     ("\\.coffee\\'" coffee-mode coffee-mode)
     ("\\.css\\'" css-mode css-mode)
+    ("\\.emblem\\'" slim-mode slim-mode)
     ("\\.erl\\'" erlang erlang-mode)
     ("\\.feature\\'" feature-mode feature-mode)
     ("\\.groovy\\'" groovy-mode groovy-mode)
