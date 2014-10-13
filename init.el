@@ -21,7 +21,7 @@
                   starter-kit starter-kit-bindings
                   starter-kit-js starter-kit-lisp
                   starter-kit-ruby evil js2-refactor
-                  smart-mode-line emmet-mode)
+                  smart-mode-line emmet-mode autopair)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
