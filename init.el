@@ -210,3 +210,5 @@
 (remove-hook 'prog-mode-hook 'esk-local-comment-auto-fill)
 
 (setq scss-compile-at-save nil)
+
+(setq-default show-trailing-whitespace t)
