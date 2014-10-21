@@ -202,6 +202,7 @@
        (lambda (hook) (add-hook hook 'rainbow-mode)))
 
 (add-hook 'sgml-mode-hook 'emmet-mode)
+(add-hook 'prog-mode-hook 'hs-minor-mode)
 
 (-each '(js2-mode-hook less-mode-hook scss-mode-hook)
        (lambda (hook) (add-hook hook 'autopair-mode)))
