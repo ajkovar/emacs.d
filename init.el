@@ -21,7 +21,8 @@
                   starter-kit starter-kit-bindings
                   starter-kit-js starter-kit-lisp
                   starter-kit-ruby evil js2-refactor
-                  smart-mode-line emmet-mode autopair)
+                  smart-mode-line emmet-mode autopair
+                  flymake-coffee)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
@@ -203,6 +204,7 @@
 
 (add-hook 'sgml-mode-hook 'emmet-mode)
 (add-hook 'prog-mode-hook 'hs-minor-mode)
+(add-hook 'coffee-mode-hook 'flymake-coffee-load)
 
 (-each '(js2-mode-hook less-mode-hook scss-mode-hook)
        (lambda (hook) (add-hook hook 'autopair-mode)))
