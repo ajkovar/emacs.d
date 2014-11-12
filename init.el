@@ -1,8 +1,8 @@
 (require 'package)
 (require 'cl)
 
-(dolist (source '(("elpa" . "http://tromey.com/elpa/")
-                  ("melpa" . "http://melpa.milkbox.net/packages/")))
+(dolist (source '(("melpa" . "http://melpa.milkbox.net/packages/")
+                  ("elpa" . "http://tromey.com/elpa/")))
   (add-to-list 'package-archives source t))
 
 (setq package-user-dir (expand-file-name "elpa" (file-name-directory load-file-name)))
@@ -188,7 +188,8 @@
 
 (global-set-key (kbd "C-=") 'er/expand-region)
 
-(global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
+(global-set-key (kbd "C-x C-b") 'helm-buffers-list)
+(global-set-key (kbd "C-x b") 'helm-projectile-switch-to-buffer)
 
 (js2r-add-keybindings-with-prefix "C-c m")
 
@@ -217,3 +218,5 @@
 (setq scss-compile-at-save nil)
 
 (setq-default show-trailing-whitespace t)
+
+(setq projectile-completion-system 'helm)
