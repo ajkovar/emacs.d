@@ -189,7 +189,7 @@
 (global-set-key (kbd "C-=") 'er/expand-region)
 
 (global-set-key (kbd "C-x C-b") 'helm-buffers-list)
-(global-set-key (kbd "C-x b") 'helm-projectile-switch-to-buffer)
+(global-set-key (kbd "C-x b") 'helm-buffers-list)
 
 (js2r-add-keybindings-with-prefix "C-c m")
 
