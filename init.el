@@ -148,8 +148,8 @@
 (global-set-key "\M-p" "\C-u1\M-v")
 
 (require 'yasnippet)
-(yas--initialize)
 (yas/load-directory snippet-user-dir)
+(yas-global-mode 1)
 
 (global-set-key (kbd "C-x g") 'magit-status)
 
