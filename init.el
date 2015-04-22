@@ -57,6 +57,7 @@
     ("\\.erl\\'" erlang erlang-mode)
     ("\\.feature\\'" feature-mode feature-mode)
     ("\\.groovy\\'" groovy-mode groovy-mode)
+    ("\\.gradle\\'" groovy-mode groovy-mode)
     ("\\.haml\\'" haml-mode haml-mode)
     ("\\.hs\\'" haskell-mode haskell-mode)
     ("\\.latex\\'" auctex LaTeX-mode)
