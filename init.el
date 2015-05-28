@@ -222,3 +222,5 @@
 (setq-default show-trailing-whitespace t)
 
 (setq projectile-completion-system 'helm)
+
+(setq helm-buffer-max-length nil)
