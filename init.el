@@ -77,6 +77,7 @@
     ("buildfile\\'" ruby-mode ruby-mode)
     ("\\.xml\\'" nxml-mode nxml-mode)
     ("\\.jsp\\'" nxml-mode nxml-mode)
+    ("\\.hbs\\'" handlebars-mode handlebars-mode)
     ("\\.ejs\\'" nxml-mode nxml-mode)))
 
 (mapc
