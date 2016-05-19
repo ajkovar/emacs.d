@@ -78,7 +78,8 @@
     ("\\.xml\\'" nxml-mode nxml-mode)
     ("\\.jsp\\'" nxml-mode nxml-mode)
     ("\\.hbs\\'" handlebars-mode handlebars-mode)
-    ("\\.ejs\\'" nxml-mode nxml-mode)))
+    ("\\.ejs\\'" nxml-mode nxml-mode)
+    ("\\.md\\'" markdown-mode markdown-mode)))
 
 (mapc
  (lambda (entry)
