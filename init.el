@@ -13,16 +13,17 @@
 (defvar prelude-packages
   '(ace-jump-mode diminish elisp-slime-nav
                   expand-region flycheck gist
-                  git-commit-mode gitconfig-mode gitignore-mode
+                  git-commit gitconfig-mode gitignore-mode
                   guru-mode helm helm-projectile
                   key-chord magit
                   rainbow-mode undo-tree
                   volatile-highlights yasnippet
-                  starter-kit starter-kit-bindings
-                  starter-kit-js starter-kit-lisp
-                  starter-kit-ruby evil js2-refactor
+                  ;starter-kit starter-kit-bindings
+                  ;starter-kit-js starter-kit-lisp
+                  idle-highlight-mode
+                  evil js2-refactor
                   smart-mode-line emmet-mode autopair
-                  flymake-coffee)
+                  flymake-coffee better-defaults)
   "A list of packages to ensure are installed at launch.")
 
 (defun prelude-packages-installed-p ()
@@ -123,8 +124,6 @@
 ;; 'a' in dired mode
 (put 'dired-find-alternate-file 'disabled nil)
 
-(set-default-font "-unknown-DejaVu Sans Mono-normal-normal-normal-*-14-*-*-*-m-0-iso10646-1")
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -132,7 +131,9 @@
  ;; If there is more than one, they won't work right.
  '(coffee-tab-width 2)
  '(css-indent-offset 2)
- '(custom-safe-themes (quote ("a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "756597b162f1be60a12dbd52bab71d40d6a2845a3e3c2584c6573ee9c332a66e" default)))
+ '(custom-safe-themes
+   (quote
+    ("a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" "756597b162f1be60a12dbd52bab71d40d6a2845a3e3c2584c6573ee9c332a66e" default)))
  '(js-curly-indent-offset 2)
  '(js-expr-indent-offset 2)
  '(js-indent-level 2)
